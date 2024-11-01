@@ -29,6 +29,7 @@ import javafx.scene.text.FontWeight;
 import javafx.stage.Stage;
 import model.User;
 
+
 public class LoginView extends viewTemplate{
 	
 	private Scene scene;
@@ -75,6 +76,7 @@ public class LoginView extends viewTemplate{
 		
 		emailLbl = new Label("Email");
 		passwdLbl = new Label("Password");
+		
 		
 		emailTF = new TextField();
 		passwdTF = new PasswordField();

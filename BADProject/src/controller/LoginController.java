@@ -5,8 +5,10 @@ import java.util.ArrayList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.Alert.AlertType;
+import javafx.scene.input.MouseEvent;
 import model.User;
 import view.LoginView;
+import view.RegisterView;
 
 public class LoginController extends ControllerTemplate{
 	
@@ -24,6 +26,15 @@ public class LoginController extends ControllerTemplate{
 			public void handle(ActionEvent event) {
 				// TODO Auto-generated method stub
 				checkList();
+			}
+		});
+		
+		view.getNoAccountContainer().setOnMouseClicked(new EventHandler<MouseEvent>() {
+
+			@Override
+			public void handle(MouseEvent event) {
+				// TODO Auto-generated method stub
+				new RegisterView(view.getStage());
 			}
 		});
 	}
